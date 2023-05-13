@@ -8,7 +8,7 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article>
+<article class="w-4/5 h-full m-auto mt-20 prose lg:prose-lg">
 	<hgroup>
 		<h1>{data.meta.title}</h1>
 		<p>Published at {data.meta.date}</p>

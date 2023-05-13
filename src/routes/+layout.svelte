@@ -6,6 +6,8 @@
 	function drawerToggle() {
 		isDrawerOpen = !isDrawerOpen;
 	}
+
+	export let data;
 </script>
 
 <div class="flex-1 drawer">
@@ -36,9 +38,13 @@
 	<div class="drawer-side">
 		<button class="cursor-default drawer-overlay" on:click={drawerToggle} />
 		<ul class="p-4 menu w-80 bg-base-100 text-base-content">
-			<li>
-				<a href="/posts" on:click={drawerToggle}>Posts</a>
-			</li>
+			{#each data.categories as category}
+				<li>
+					<a href={`/posts/${category}`} on:click={drawerToggle}>
+						{category}
+					</a>
+				</li>
+			{/each}
 		</ul>
 	</div>
 </div>
