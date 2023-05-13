@@ -8,32 +8,34 @@
 	}
 </script>
 
-<div class="navbar bg-base-100">
-	<div class="flex-none">
-		<button class="btn btn-square btn-ghost" on:click={drawerToggle}>
-			<i class="fa-solid fa-bars text-xl" />
-		</button>
-	</div>
-	<div class="flex-1">
-		<a class="btn btn-ghost normal-case text-xl" href="/">tynage</a>
-	</div>
-	<div class="flex-none">
-		<button class="btn btn-square btn-ghost">
-			<i class="fa-brands fa-github text-xl" />
-		</button>
-		<button class="btn btn-square btn-ghost">
-			<i class="fa-regular fa-circle-question text-xl" />
-		</button>
-	</div>
-</div>
-<div class="drawer">
+<div class="flex-1 drawer">
 	<input type="checkbox" class="drawer-toggle" bind:checked={isDrawerOpen} />
 	<div class="drawer-content">
-		<slot />
+		<div class="flex flex-col w-full h-screen">
+			<div class="shadow-md navbar bg-base-100">
+				<div class="flex-none">
+					<button class="btn btn-square btn-ghost" on:click={drawerToggle}>
+						<i class="text-xl fa-solid fa-bars" />
+					</button>
+				</div>
+				<div class="flex-1">
+					<a class="text-xl normal-case btn btn-ghost" href="/">tynage</a>
+				</div>
+				<div class="flex-none">
+					<button class="btn btn-square btn-ghost">
+						<i class="text-xl fa-brands fa-github" />
+					</button>
+					<button class="btn btn-square btn-ghost">
+						<i class="text-xl fa-regular fa-circle-question" />
+					</button>
+				</div>
+			</div>
+			<slot />
+		</div>
 	</div>
 	<div class="drawer-side">
-		<label for="my-drawer" class="drawer-overlay" />
-		<ul class="menu p-4 w-80 bg-base-100 text-base-content">
+		<button class="cursor-default drawer-overlay" on:click={drawerToggle} />
+		<ul class="p-4 menu w-80 bg-base-100 text-base-content">
 			<li>
 				<a href="/posts" on:click={drawerToggle}>Posts</a>
 			</li>
