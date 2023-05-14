@@ -5,7 +5,7 @@
 </script>
 
 <div class="flex items-center justify-center h-full">
-	<section class="w-full m-auto sm:w-4/6 h-4/5">
+	<section class="w-full sm:w-4/6">
 		<ul class="w-full h-full p-5">
 			{#each data.posts as post, index}
 				<li class="flex flex-col transition-all rounded-md hover:bg-gray-100">
@@ -14,10 +14,10 @@
 						class="flex flex-col w-full h-full gap-10 p-3"
 					>
 						<div class="flex items-center justify-between w-full">
-							<span class="text-2xl font-semibold">{post.title}</span>
-							<p class="text-xs">{post.date}</p>
+							<span class="text-xl font-semibold sm:text-2xl">{post.title}</span>
+							<p class="text-xs min-w-fit">{post.date}</p>
 						</div>
-						<p>{post.description}</p>
+						<p class="text-sm sm:text-md">{post.description}</p>
 					</a>
 				</li>
 				{#if index !== data.posts.length - 1}
