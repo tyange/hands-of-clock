@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import Footer from '../components/footer.svelte';
 
 	let isDrawerOpen = false;
 
@@ -33,13 +34,7 @@
 				</div>
 			</div>
 			<slot />
-			<footer class="p-2 footer footer-center">
-				<div>
-					<p class="text-xs">
-						© {new Date().getFullYear()} <a href="https://github.com/tyange">tyange</a>
-					</p>
-				</div>
-			</footer>
+			<Footer />
 		</div>
 	</div>
 	<div class="drawer-side">
