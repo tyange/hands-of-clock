@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import Drawer from '../components/drawer.svelte';
 	import Footer from '../components/footer.svelte';
 	import Header from '../components/header.svelte';
 
@@ -21,16 +22,5 @@
 			<Footer />
 		</div>
 	</div>
-	<div class="drawer-side">
-		<button class="cursor-default drawer-overlay" on:click={drawerToggle} />
-		<ul class="p-4 menu w-80 bg-base-100 text-base-content">
-			{#each data.categories as category}
-				<li>
-					<a href={`/posts/${category}`} on:click={drawerToggle}>
-						{category}
-					</a>
-				</li>
-			{/each}
-		</ul>
-	</div>
+	<Drawer {drawerToggle} categories={data.categories} />
 </div>
