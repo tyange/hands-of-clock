@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import Footer from '../components/footer.svelte';
+	import Header from '../components/header.svelte';
 
 	let isDrawerOpen = false;
 
@@ -15,24 +16,7 @@
 	<input type="checkbox" class="drawer-toggle" bind:checked={isDrawerOpen} />
 	<div class="drawer-content">
 		<div class="relative flex flex-col w-full h-screen">
-			<div class="shadow-md navbar bg-base-100">
-				<div class="flex-none">
-					<button class="btn btn-square btn-ghost" on:click={drawerToggle}>
-						<i class="text-xl fa-solid fa-bars" />
-					</button>
-				</div>
-				<div class="flex-1">
-					<a class="text-xl normal-case btn btn-ghost" href="/">시곗바늘</a>
-				</div>
-				<div class="flex-none">
-					<button class="btn btn-square btn-ghost">
-						<i class="text-xl fa-brands fa-github" />
-					</button>
-					<button class="btn btn-square btn-ghost">
-						<i class="text-xl fa-regular fa-circle-question" />
-					</button>
-				</div>
-			</div>
+			<Header {drawerToggle} />
 			<slot />
 			<Footer />
 		</div>
