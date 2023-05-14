@@ -13,7 +13,7 @@
 <div class="flex-1 drawer">
 	<input type="checkbox" class="drawer-toggle" bind:checked={isDrawerOpen} />
 	<div class="drawer-content">
-		<div class="flex flex-col w-full">
+		<div class="relative flex flex-col w-full h-screen">
 			<div class="shadow-md navbar bg-base-100">
 				<div class="flex-none">
 					<button class="btn btn-square btn-ghost" on:click={drawerToggle}>

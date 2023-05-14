@@ -4,9 +4,9 @@
 	export let data: { posts: Post[] };
 </script>
 
-<div class="flex items-center justify-center h-full">
+<div class="flex justify-center flex-1 mt-20">
 	<section class="w-full sm:w-4/6">
-		<ul class="w-full h-full p-5">
+		<ul class="p-5">
 			{#each data.posts as post, index}
 				<li class="flex flex-col transition-all rounded-md hover:bg-gray-100">
 					<a
