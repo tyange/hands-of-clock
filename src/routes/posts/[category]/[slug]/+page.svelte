@@ -11,7 +11,7 @@
 <article class="w-4/5 h-full m-auto mt-20 prose lg:prose-lg">
 	<hgroup>
 		<h1>{data.meta.title}</h1>
-		<p>Published at {data.meta.date}</p>
+		<p class="w-full text-sm text-right">{data.meta.date}</p>
 	</hgroup>
 	<div>
 		<svelte:component this={data.content} />
