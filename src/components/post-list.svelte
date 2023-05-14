@@ -11,10 +11,10 @@
 				<li class="flex flex-col transition-all rounded-md hover:bg-gray-100">
 					<a
 						href={`/posts/${post.category}/${post.slug}`}
-						class="flex flex-col w-full h-full gap-5 p-3"
+						class="flex flex-col w-full h-full gap-10 p-3"
 					>
 						<div class="flex items-center justify-between w-full">
-							<span class="text-2xl">{post.title}</span>
+							<span class="text-2xl font-semibold">{post.title}</span>
 							<p class="text-xs">{post.date}</p>
 						</div>
 						<p>{post.description}</p>

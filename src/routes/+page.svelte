@@ -4,4 +4,8 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>hands of clock</title>
+</svelte:head>
+
 <PostList {data} />

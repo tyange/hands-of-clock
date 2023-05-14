@@ -21,7 +21,9 @@
 					</button>
 				</div>
 				<div class="flex-1">
-					<a class="text-xl normal-case btn btn-ghost" href="/">tynage</a>
+					<a class="text-xl normal-case btn btn-ghost" href="/"
+						>시계의 바늘을 시곗바늘이라 부르는 곳</a
+					>
 				</div>
 				<div class="flex-none">
 					<button class="btn btn-square btn-ghost">

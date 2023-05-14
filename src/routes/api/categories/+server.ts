@@ -12,7 +12,7 @@ async function getCategories() {
 		if (file && typeof file === 'object' && 'metadata' in file) {
 			const metadata = file.metadata as Omit<Post, 'slug'>;
 
-			categories.push(metadata.category);
+			!categories.includes(metadata.category) && categories.push(metadata.category);
 		}
 	}
 	categories.sort((a, b) => a.localeCompare(b));

@@ -1,38 +1,16 @@
-# create-svelte
+# 시계의 바늘을 시곗바늘이라 부르는 곳(hands-of-clock)
+> Sveltekit 기반의 Markdown 블로그
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+기존의 gatsby 기반의 블로그에서 Sveltekit, daisyui(Tailwindcss) 기반의 블로그로 이주했어요.
+<br>
+<br>
 
-## Creating a project
+## 업데이트 내역
+* 2023-05
+  - 첫 배포
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 만든 사람
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Github: [tyange](https://github.com/tyange)
+<br>
+Email: [usun16@gmail.com](mailto:usun16@gmail.com)
