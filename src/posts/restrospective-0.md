@@ -2,7 +2,7 @@
 title: 지난 몇 년의 회고록
 description: 묵혀둔 회고에 대한 단상들
 date: '2023-01-15'
-category: 힘들여 쓰지 않기 
+category: hard-writing
 published: true
 ---
 

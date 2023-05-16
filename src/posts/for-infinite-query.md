@@ -2,7 +2,7 @@
 title: 어떻게 성공했는지 알 수 없는 useInfiniteQuery
 description: 이게 왜 되지?
 date: '2023-01-26'
-category: 구구절절 프로그래밍
+category: long-long
 published: true
 ---
 

@@ -2,7 +2,7 @@
 title: 시 쓰기와 프로그래밍 - 0
 description: 시 쓰기와 프로그래밍이 비슷하다고?
 date: '2022-04-01'
-category: 타이핑 소리에 박자 넣기
+category: typing
 published: true
 ---
 나는 시를 꽤 오랫동안 써 왔다.

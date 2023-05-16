@@ -2,7 +2,7 @@ import type { Post } from '../../../lib/types';
 
 import { json } from '@sveltejs/kit';
 
-async function getPosts() {
+async function getPosts(category?: string) {
 	let posts: Post[] = [];
 
 	const paths = import.meta.glob('/src/posts/*.md', { eager: true });
@@ -23,10 +23,21 @@ async function getPosts() {
 		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
 	);
 
-	return posts;
+	if (category) {
+		posts = posts.filter((post) => post.category === category);
+	}
+
+	const splicedPosts = [];
+	const chunkSize = 4;
+
+	for (let i = 0; i < posts.length; i += chunkSize) {
+		splicedPosts.push(posts.slice(i, i + chunkSize));
+	}
+
+	return splicedPosts;
 }
 
-export async function GET() {
-	const posts = await getPosts();
+export async function GET(event) {
+	const posts = await getPosts(event.url.search.split('=')[1]);
 	return json(posts);
 }

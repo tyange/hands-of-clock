@@ -2,7 +2,7 @@
 title: angular animation 사용기!
 description: angular-animation으로 간단한 애니메이션 구현하기
 date: '2021-12-02'
-category: 구구절절 프로그래밍 
+category: long-long
 published: true
 ---
 React는 기본적으로 제공되는 animation-api가 없기 때문에, 서드 파티 패키지를 설치해서 사용해야 합니다. [**ReactTransitionGroup**](https://ko.reactjs.org/docs/animation.html), [**react-spring**](https://react-spring.io) 등등... 이 중에 제가 써본 것은 react-spring인데 패키지를 설치해 사용하는 것인 만큼 사용법을 따로 익히지 않으면 원하는 애니메이션을 구현하기가 무척 까다로웠습니다. 적어도 ReactTransitionGroup은 최근에 React 팀에서 공식적으로 지원하겠다고 밝힌 것을 본 적이 있는데, 아직 정식 버전업에 추가되진 않은 것 같네요.

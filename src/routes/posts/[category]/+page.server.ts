@@ -4,10 +4,8 @@ import type { PageServerLoad } from './$types';
 
 export const load = (async ({ fetch, params }) => {
 	try {
-		const response = await fetch('/api/posts');
-		const gettingPost: Post[] = await response.json();
-
-		const posts = gettingPost.filter((post) => post.category === params.category);
+		const response = await fetch(`/api/posts?category=${params.category}`);
+		const posts: Post[][] = await response.json();
 
 		return { posts };
 	} catch (err) {
