@@ -12,9 +12,7 @@
 	};
 </script>
 
-<div
-	class="relative flex flex-col items-center justify-center flex-1 min-h-full gap-10 mt-20 mb-10"
->
+<div class="relative flex flex-col items-center justify-center flex-1 min-h-full gap-10 mb-10">
 	<section class="w-full sm:w-4/6">
 		<ul class="p-5">
 			{#each data.posts[pageNum] as post, index}
